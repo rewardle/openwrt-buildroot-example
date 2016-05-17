@@ -19,7 +19,7 @@ USER openwrt
 WORKDIR /home/openwrt
 
 # checkout openwrt
-RUN git clone git://git.openwrt.org/14.07/openwrt.git trunk
+RUN git clone git://git.openwrt.org/15.05/openwrt.git trunk
 
 # set workdir
 WORKDIR /home/openwrt/trunk/
