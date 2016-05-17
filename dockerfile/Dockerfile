@@ -1,10 +1,10 @@
-FROM ubuntu:14.10
+FROM ubuntu:16.04
 
 MAINTAINER info@yourcompany.com
 
 # install dependencies
 RUN apt-get update &&\
-    apt-get install -y git-core subversion build-essential gcc-multilib \
+    apt-get install -y git-core subversion build-essential gcc-multilib libssl-dev sudo \
                        libncurses5-dev zlib1g-dev gawk flex gettext wget unzip python nano &&\
     apt-get clean
 
